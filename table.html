@@ -1,42 +1,45 @@
 <!DOCTYPE html>
-<html lang='de'>
-  <head>
-    <meta charset='UTF-8'>
-    <title>LU03.A03 - Tabelle</title>
-    <link rel='stylesheet' href='tabelle.css'>
-  </head>
-  <body>
-  </style>
-  </head>
-  <body>
-  <table>
-    <tr>
-      <th>Marke</th>
-      <th>Modelle</th>
-    </tr>
-    <tr>
-      <td rowspan="2">Ferrari</td>
-      <td>LaFerrari</td>
-    </tr>
-    <tr>
-      <td>458 Italia</td>
-    </tr>
-    <tr>
-      <td rowspan="2">Lamborghini</td>
-      <td>Aventador</td>
-    </tr>
-    <tr>
-    </tr>
-    <tr>
-      <td rowspan="2">Porsche</td>
-      <td>911</td>
-    </tr>
-    <tr>
-      <td>Panamera</td>
-    </tr>
-  </table>
-
-  </body>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Fahrzeug-Konfigurator</title>
+</head>
+<body>
+<h1>Fahrzeug-Konfigurator</h1>
+<form action="https://it.bzz.ch/demo/formdata/index.php" method="post">
+  <fieldset>
+    <legend>Fahrzeugmodell</legend>
+    <label for="Fahrzeugmodell">Wählen Sie ein Fahrzeugmodell:</label>
+    <select id="Fahrzeugmodell" name="Fahrzeugmodell">
+      <option value="Modell A">Modell A</option>
+      <option value="Modell B">Modell B</option>
+      <option value="Modell C">Modell C</option>
+      <option value="Modell D">Modell D</option>
+      <option value="Modell E">Modell E</option>
+      <option value="Modell F">Modell F</option>
+      <option value="Modell G">Modell G</option>
+      <option value="Modell H">Modell H</option>
+      <option value="Modell I">Modell I</option>
+      <option value="Modell J">Modell J</option>
+      <option value="Modell K">Modell K</option>
+      <option value="Modell L">Modell L</option>
+      <option value="Modell M">Modell M</option>
+      <option value="Modell N">Modell N</option>
+      <option value="Modell O">Modell O</option>
+      <option value="Modell P">Modell P</option>
+    </select>
+  </fieldset>
+  <fieldset>
+    <legend>Lackfarbe</legend>
+    <label for="Lackfarbe">Wählen Sie eine Lackfarbe:</label>
+    <input type="radio" name="Lackfarbe" value="Rot" id="Rot"> Rot
+    <input type="radio" name="Lackfarbe" value="Blau" id="Blau"> Blau
+    <input type="radio" name="Lackfarbe" value="Grün" id="Grün"> Grün
+    <input type="radio" name="Lackfarbe" value="Schwarz" id="Schwarz"> Schwarz
+  </fieldset>
+  <button type="submit">Konfigurieren</button>
+</form>
+</body>
 </html>
 
 
